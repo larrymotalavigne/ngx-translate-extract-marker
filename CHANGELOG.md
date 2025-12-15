@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improved TypeScript type definitions with readonly arrays
 - Enhanced JSDoc comments for better IDE support
 - Modernized package.json with proper exports field
+- Package name changed to @larrym/ngx-translate-extract-marker
 
 ### Removed
 - Angular CLI build dependency

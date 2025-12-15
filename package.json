@@ -1,5 +1,5 @@
 {
-  "name": "@ngx-translate-extract/marker",
+  "name": "@larrym/ngx-translate-extract-marker",
   "version": "2.0.0",
   "description": "Modern ESM-based marker function for ngx-translate-extract with Angular 19+ support",
   "type": "module",

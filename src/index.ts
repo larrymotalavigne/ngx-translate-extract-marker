@@ -1,5 +1,5 @@
 /**
- * @ngx-translate-extract/marker
+ * @larrym/ngx-translate-extract-marker
  *
  * Modern ESM-based marker function for ngx-translate-extract with Angular 19+ support.
  *

@@ -1,8 +1,8 @@
-# @ngx-translate-extract/marker
+# @larrym/ngx-translate-extract-marker
 
 > Modern ESM-based marker function for ngx-translate-extract with Angular 19+ support
 
-[![npm version](https://img.shields.io/npm/v/@ngx-translate-extract/marker.svg)](https://www.npmjs.com/package/@ngx-translate-extract/marker)
+[![npm version](https://img.shields.io/npm/v/@larrym/ngx-translate-extract-marker.svg)](https://www.npmjs.com/package/@larrym/ngx-translate-extract-marker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A modernized, type-safe marker function for [ngx-translate-extract](https://github.com/biesbjerg/ngx-translate-extract) that works seamlessly with Angular 19+ and uses pure ESM.
@@ -26,19 +26,19 @@ The marker function is a pure identity function - it returns its input unchanged
 ## Installation
 
 ```bash
-npm install @ngx-translate-extract/marker
+npm install @larrym/ngx-translate-extract-marker
 ```
 
 Or using yarn:
 
 ```bash
-yarn add @ngx-translate-extract/marker
+yarn add @larrym/ngx-translate-extract-marker
 ```
 
 Or using pnpm:
 
 ```bash
-pnpm add @ngx-translate-extract/marker
+pnpm add @larrym/ngx-translate-extract-marker
 ```
 
 ## Usage
@@ -46,7 +46,7 @@ pnpm add @ngx-translate-extract/marker
 ### Basic Usage
 
 ```typescript
-import { marker } from '@ngx-translate-extract/marker';
+import { marker } from '@larrym/ngx-translate-extract-marker';
 
 // Mark a single translation key
 const title = marker('HOME.TITLE');
@@ -60,7 +60,7 @@ const keys = marker(['HOME.TITLE', 'HOME.SUBTITLE', 'HOME.DESCRIPTION']);
 ```typescript
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { marker } from '@ngx-translate-extract/marker';
+import { marker } from '@larrym/ngx-translate-extract-marker';
 
 @Component({
   selector: 'app-home',
@@ -85,7 +85,7 @@ export class HomeComponent {
 For convenience, you can use the shorter `_` alias:
 
 ```typescript
-import { _ } from '@ngx-translate-extract/marker';
+import { _ } from '@larrym/ngx-translate-extract-marker';
 
 const title = _('HOME.TITLE');
 ```
@@ -95,7 +95,7 @@ const title = _('HOME.TITLE');
 Use TypeScript's type system to ensure compile-time safety:
 
 ```typescript
-import { marker, TranslationKey } from '@ngx-translate-extract/marker';
+import { marker, TranslationKey } from '@larrym/ngx-translate-extract-marker';
 
 // Define your app's translation keys
 type AppTranslationKeys =
@@ -112,7 +112,7 @@ const invalidKey: TranslationKey<AppTranslationKeys> = marker('INVALID.KEY'); //
 ### Array of Translation Keys
 
 ```typescript
-import { marker, TranslationKeys } from '@ngx-translate-extract/marker';
+import { marker, TranslationKeys } from '@larrym/ngx-translate-extract-marker';
 
 type AppKeys = 'HOME.TITLE' | 'HOME.SUBTITLE' | 'HOME.DESCRIPTION';
 
@@ -131,7 +131,7 @@ this.translate.get(keys).subscribe((translations) => {
 ### In Constants and Configuration
 
 ```typescript
-import { marker } from '@ngx-translate-extract/marker';
+import { marker } from '@larrym/ngx-translate-extract-marker';
 
 export const NAVIGATION_ITEMS = [
   { path: '/home', label: marker('NAV.HOME') },

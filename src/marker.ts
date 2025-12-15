@@ -19,7 +19,7 @@
  *
  * @example
  * // With TranslateService
- * import { marker } from '@ngx-translate-extract/marker';
+ * import { marker } from '@larrym/ngx-translate-extract-marker';
  *
  * const key = marker('MY_TRANSLATION_KEY');
  * this.translate.get(key).subscribe(translation => {
