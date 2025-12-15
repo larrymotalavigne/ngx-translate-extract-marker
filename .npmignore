@@ -1,0 +1,31 @@
+# Source files
+src/
+*.spec.ts
+*.test.ts
+
+# Config files
+tsconfig.json
+vitest.config.ts
+eslint.config.js
+.prettierrc.json
+.gitignore
+.npmignore
+
+# Development
+node_modules/
+coverage/
+.vscode/
+.idea/
+
+# Git
+.git/
+.github/
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+azure-pipelines.yml
+
+# Misc
+*.log
+.DS_Store

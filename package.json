@@ -1,0 +1,64 @@
+{
+  "name": "@ngx-translate-extract/marker",
+  "version": "2.0.0",
+  "description": "Modern ESM-based marker function for ngx-translate-extract with Angular 19+ support",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "angular",
+    "ngx-translate",
+    "i18n",
+    "translation",
+    "extract",
+    "marker",
+    "esm"
+  ],
+  "author": "Modernized for ESM and Angular 19+",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larrymotalavigne/ngx-translate-extract-marker.git"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=19.0.0"
+  },
+  "devDependencies": {
+    "@angular/core": "^19.0.0",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "eslint": "^9.16.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8",
+    "rxjs": "^7.8.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "sideEffects": false
+}
